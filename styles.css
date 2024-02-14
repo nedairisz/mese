@@ -2,10 +2,9 @@
 main{   
     box-sizing: border-box;
     flex-direction: row;
-
 }
 header{
-   
+   background-image: url(kepek/h.jpg);
 }
 ul{
     display: flex;
