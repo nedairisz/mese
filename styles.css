@@ -10,16 +10,10 @@ header{
 
 nav ul{
     display: flex;
-<<<<<<< HEAD:styles.css
     gap: 5px;
-=======
     list-style: none;
->>>>>>> 526352c45eec6c586df938d9cb2803e00dcdcc60:style.css
 }
-li{
 
-    
-}
 article{
     display: flex;
     padding: 10px
