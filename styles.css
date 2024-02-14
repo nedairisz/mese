@@ -19,5 +19,8 @@ li{
 }
 article{
     display: flex;
-
+    padding: 10px
+}
+article p{
+    flex: 0 0 calc(33% - 10px);
 }
