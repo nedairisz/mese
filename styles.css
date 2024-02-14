@@ -1,18 +1,17 @@
-*{
-    box-sizing: border-box;
-}
 
-main{
+main{   
+    box-sizing: border-box;
+    flex-direction: row;
+
 }
 header{
    
 }
 ul{
     display: flex;
-    flex-direction: row;
-    
 }
 li{
+
     list-style: none;
 }
 article{
