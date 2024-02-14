@@ -1,0 +1,22 @@
+
+main{   
+    box-sizing: border-box;
+    flex-direction: row;
+}
+header{
+    padding: 20px;
+    background-color: rgb(150, 129, 149);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+article{
+    display: flex;
+    padding: 10px
+}
+article p{
+    flex: 0 0 calc(33% - 10px);
+}
