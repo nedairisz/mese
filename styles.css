@@ -4,14 +4,17 @@ main{
     flex-direction: row;
 }
 header{
-   background-image: url(kepek/h.jpg);
+    padding: 20px;
+    background-image: url(kepek/h.jpg);
 }
-ul{
+
+nav ul{
     display: flex;
+    list-style: none;
 }
 li{
 
-    list-style: none;
+    
 }
 article{
     display: flex;
