@@ -123,6 +123,10 @@ textarea {
     margin-left: 10px; 
 }
 
+.pontok{
+    display: flex;
+    flex-direction: row;
+}
 
 
 footer p{
