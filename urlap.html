@@ -15,25 +15,56 @@
             <li><a href="urlap.html">Űrlap</a></li>
             </ul>
         </nav>
-        <fieldset class="elso">
-            <legend>Tetszett?</legend>
-
-            <input type="radio" id="Igen" name="valasz" value="Igen">
-            <label for="valasz">Igen</label><br>
-
-            <input type="radio" id="Nem" name="valasz" value="Nem">
-            <label for="valasz">Nem</label><br>
-            <div class="slidecontainer">
-                Add meg a korod!<br>
-                <input type="range" min="1" max="100" value="50" class="slider col-lg-12 col-md-12 col-sm-12" id="myRange">
+        
+        <fieldset>
+            <div class="container">
+                <h2>Képregény értékelése</h2>
+                <form >
+                    <label for="nev">Név:</label>
+                    <input class="nev" type="text" id="nev" name="nev" part="^([A-ZÁÉÚŐÓÜÖÍ]([a-záéúőóüöí.]+\s?)){2,}$">
+            
+                    <label for="email">E-mail cím:</label>
+                    <input class="email" type="email" id="email" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            
+                    <div class="wrapper1">
+                        <label for="kor" class="addkor">Add meg a korod!</label>
+                        <div class="csuszka">
+                            <input type="range" class="csusz" id="kor" name="kor" min="1" max="100"
+                                oninput="document.getElementById('kor_szam').value = this.value">
+                            <input type="number" class="szamki" id="kor_szam" name="kor_szam" min="1" max="100"
+                                oninput="document.getElementById('kor').value = this.value">
+                        </div>
+                    </div>
+                    
+                    <label for="ertekeles">Értékelés:</label>
+                    <select id="ertekeles" name="ertekeles">
+                        <option value="1">1 csillag</option>
+                        <option value="2">2 csillag</option>
+                        <option value="3">3 csillag</option>
+                        <option value="4">4 csillag</option>
+                        <option value="5">5 csillag</option>
+                    </select>
+                    
+                
+                    <label for="olvasasi_elmeny">Olvasási élmény:</label>
+                    <div class="radio_group">
+                        <input type="radio" id="pozitiv" name="elmeny" value="pozitiv">
+                        <label for="pozitiv">Pozitív</label>
+                    
+                        <input type="radio" id="semleges" name="elmeny" value="semlege">
+                        <label for="semlege">Semleges</label>
+                    
+                        <input type="radio" id="negativ" name="elmeny" value="negativ">
+                        <label for="negativ">Negatív</label>
+                    </div>
+                    
+                    <label for="megjegyz">Megjegyzések:</label>
+                    <textarea id="megjegyz" name="megjegyz"></textarea>
+                    <input class="gomb" type="submit" value="Küldés">
+                </form>
             </div>
         </fieldset>
-
-        <fieldset>
-            <legend>Írjon vélleményt!</legend>
-            <textarea id="velemeny" name="velemeny"></textarea>
-            <div class="gomb"><input type="submit" value="Küldés"></div>
-        </fieldset>
+        <footer><p>Földi Cintia, Néda Írisz</p></footer>
     </main>
 </body>
 </html>
