@@ -109,6 +109,7 @@ textarea {
 
 .wrapper1 {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 10px;
 }
 .addkor {
