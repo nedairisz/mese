@@ -122,13 +122,18 @@ textarea {
     flex: 0 0 auto;
     margin-left: 10px; 
 }
-
+.radio_group{
+    display: flex;
+    flex-direction: row;
+}
 .pontok{
     display: flex;
     flex-direction: row;
 }
-
-
+.gombocskak{
+    display: flex;
+    flex-direction: column;
+}
 footer p{
     text-align: center;
 }
